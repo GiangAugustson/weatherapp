@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<HBox fx:controller="weatherApp.WeatherController"
-	  xmlns:fx="http://javafx.com/fxml"
-	  alignment="center" spacing="10">
+<AnchorPane id="AnchorPane" minHeight="-1.0" minWidth="-1.0" prefWidth="300.0"
+			xmlns:fx="http://javafx.com/fxml"
+			fx:controller="weatherApp.UpdateLocationController">
+	<children>
+		<VBox alignment="CENTER" layoutX="80.0" layoutY="50.0" prefHeight="31.0" prefWidth="150.0" spacing="5.0">
+			<children>
+				<Label text="City"/>
+				<TextField fx:id="city" maxWidth="250"
+						   onAction="#getCity"/>
+			</children>
+		</VBox>
 
-	<Label text="City"/>
-	<TextField fx:id="city" maxWidth="150"/>
-	<Label text="State"/>
-	<TextField fx:id="state" maxWidth="150"/>
-
-	<Button fx:id="save" text="Save"
-			onAction="#handleButton"/>
-</HBox>
+		<VBox alignment="CENTER" layoutX="82.0" layoutY="100.0" prefHeight="47.0" prefWidth="150.0">
+			<children>
+				<Button fx:id="display"
+						text="Display Weather"
+						onAction="#displayWeather"/>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>

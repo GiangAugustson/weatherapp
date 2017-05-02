@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-1.0" minWidth="-1.0" prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="weatherApp.DisplayScreenController">
+  <children>
+    <VBox alignment="CENTER" layoutX="75.0" layoutY="253.0" prefHeight="47.0" prefWidth="150.0">
+      <children>
+        <Button id="Edit" fx:id="SetLocation" mnemonicParsing="false" onAction="#openEditScreen" text="Change Location" />
+      </children>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="10.0" layoutY="210.0" minHeight="31.0" prefHeight="31.0" prefWidth="100.0" spacing="5.0">
+      <children>
+        <Label text="Max" />
+        <Label id="HighTemp" fx:id="MaxTemp" text="* °F" />
+      </children>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="190.0" layoutY="210.0" minHeight="31.0" prefHeight="31.0" prefWidth="100.0" spacing="5.0">
+      <children>
+        <Label text="Min" />
+        <Label id="LowTemp" fx:id="MinTemp" text="* °F" />
+      </children>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="100.0" layoutY="10.0" prefHeight="56.0" prefWidth="100.0" spacing="5.0">
+      <children>
+        <Label text="City" />
+        <Label fx:id="CityEntry" text="*" />
+      </children>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="50.0" layoutY="70.0" prefHeight="56.0" prefWidth="200.0" spacing="5.0">
+      <children>
+        <Label text="Description" />
+        <Label id="State" fx:id="DescriptionEntry" text="*" />
+      </children>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="100.0" layoutY="210.0" minHeight="31.0" prefHeight="31.0" prefWidth="100.0" spacing="5.0">
+      <children>
+        <Label text="Temperature" />
+        <Label id="HighTemp" fx:id="CurrentTemp" text="* °F" />
+      </children>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="50.0" layoutY="150.0" prefHeight="38.0" prefWidth="100.0" spacing="5.0">
+      <children>
+        <Label text="Wind Speed" />
+        <Label id="HighTemp" fx:id="WindSpeed" text="* mph" />
+      </children>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="150.0" layoutY="150.0" prefHeight="38.0" prefWidth="100.0" spacing="5.0">
+      <children>
+        <Label text="Humidity" />
+        <Label id="HighTemp" fx:id="Humidity" text="*%" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
